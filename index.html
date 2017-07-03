@@ -2,12 +2,18 @@
 <html>
     <head>
         <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+        <link rel="stylesheet" type="text/css" href="./styles/grid.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
         <title>Mi primera web</title>
     </head>
     <body>
         <header class="header">
             <h1 class="title">Batman</h1>
-            <img class="title-img" src="./images/batman.jpg" alt="Foto de batman">
+            <!--<img class="title-img" src="./images/batman.jpg" alt="Foto de batman">-->
+            <div class="title-img"></div>
             <p class="title-cite">"Él puede tomar la decisión que nadie más puede, la decisión correcta"</p>
         </header>
 
@@ -26,7 +32,7 @@
                     <a href>Transporte</a>
                 </li>
                 <li class="navbar-item">
-                    <a href>Contacto</a>
+                    <a href="contact.html">Contacto</a>
                 </li>
                 <li class="navbar-item">
                     <a href>Tareas</a>
@@ -34,10 +40,10 @@
             </ul>
         </nav>
 
-        <main>
-            <section class="about-me">
+        <main class="container">
+            <section class="about-me clearfix section-container">
                 <div class="batman-video">
-                    <video width="320" height="240" controls>
+                    <video width="550" height="300" controls>
                         <source src="./video/batman.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -48,9 +54,9 @@
                 </div>
             </section>
 
-            <section class="team">
-                <div>
-                    <div>
+            <section class="team section-reverse section-container">
+                <div class="row container">
+                    <div class="col-4">
                         <article class="team-member">
                             <header>
                                 <h3>
@@ -70,7 +76,7 @@
                             </p>
                         </article>
                     </div>
-                    <div>
+                    <div class="col-4">
                         <article class="team-member">
                             <header>
                                 <h3>
@@ -89,7 +95,7 @@
                             </p>
                         </article>
                     </div>
-                    <div>
+                    <div class="col-4">
                         <article class="team-member">
                             <header>
                                 <h3>
@@ -112,8 +118,8 @@
                 </div>
             </section>
 
-            <section class="transport">
-                <div>
+            <section class="transport section-container">
+                <div class="row-flex">
                     <div class="transport-item">
                         <figure>
                             <img class="transport-img" src="./images/car.jpg" alt="Coche batman">
