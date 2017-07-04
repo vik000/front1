@@ -25,7 +25,6 @@ function getElementByIdAndScroll (id) {
 
 function scrollToElement (element) {
     var jump = parseInt(element.getBoundingClientRect().top * 0.3);
-    console.log(jump);
 
     document.body.scrollTop += jump;
 
