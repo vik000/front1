@@ -66,5 +66,6 @@ form.addEventListener("submit", function (event) {
         form.reset();
         submitButton.removeAttribute("disabled");
         submitButton.removeChild(loadingIcon);
+        sendNotification("Formulario recibido", "Body de ejemplo");
     }, 1000);
 });
