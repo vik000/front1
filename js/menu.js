@@ -3,6 +3,9 @@ var navbarItems = document.getElementsByClassName('navbar-item');
 for (var i = 0; i < navbarItems.length; i++) {
     navbarItems[i].addEventListener('click', function (event) {
         var sectionToGo = this.getElementsByTagName('a')[0].href.split("#");
+
+        deleteActiveClass();
+        this.classList.add('active');
         
         if (sectionToGo.length === 2) {
             event.preventDefault();
@@ -35,4 +38,10 @@ function scrollToElement (element) {
             scrollToElement(element);
         }, 40);
     } 
+}
+
+function deleteActiveClass() {
+    for (var i = 0; i < navbarItems.length; i++) {
+        navbarItems[i].classList.remove('active');
+    }
 }
