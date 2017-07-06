@@ -63,6 +63,7 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     setTimeout(function () {
+        form.reset();
         submitButton.removeAttribute("disabled");
         submitButton.removeChild(loadingIcon);
     }, 1000);
